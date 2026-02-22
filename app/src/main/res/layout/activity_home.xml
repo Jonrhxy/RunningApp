@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#0E0E0E"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Top Banner -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:background="#1C1C1E"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Get out and about"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Track your daily life activities →"
+                    android:textColor="#BBBBBB"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- ACTION BUTTONS (2 columns using LinearLayout instead of GridLayout) -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <!-- Button 1 -->
+            <LinearLayout
+                android:id="@+id/btnAddExpense"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="#2E7D32"
+                android:padding="12dp"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp">
+
+                <ImageView
+                    android:src="@drawable/ic_activity2"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:tint="#FFFFFF"/>
+
+                <TextView
+                    android:text="Add Expense"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- Button 2 -->
+            <LinearLayout
+                android:id="@+id/btnStartActivity"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="#1565C0"
+                android:padding="12dp"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp">
+
+                <ImageView
+                    android:src="@drawable/ic_activity"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:tint="#FFFFFF"/>
+
+                <TextView
+                    android:text="Start Activity"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- Search Box -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:background="#1C1C1E"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@android:drawable/ic_menu_search"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:tint="#888888"/>
+
+                <EditText
+                    android:hint="Where to?"
+                    android:textColorHint="#888888"
+                    android:textColor="#FFFFFF"
+                    android:background="@null"
+                    android:layout_marginStart="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>
